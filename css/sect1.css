@@ -1,0 +1,76 @@
+.sect1 {
+    background-image: url('../img/sect1_bg.png');
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+.sect1__header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 40px;
+}
+
+.sect1__header-link {
+    color: #fff;
+    margin-right: 25px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.sect1__header-phone {
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "CenturyGothicBold", sans-serif;
+}
+
+.sect1__info {
+    margin-top: 160px;
+}
+
+.sect1__info-container {
+    width: 600px;
+}
+
+.sect1__subtitle {
+    font-weight: 100;
+}
+
+.sect1__society {
+    margin-top: 100px;
+}
+
+.sect1__button {
+    text-transform: uppercase;
+    padding: 8px 20px;
+}
+
+.sect1__video {
+    margin-top: 40px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #474747, #3D3D3D);
+}
+
+.sect1__video-play {
+    color: #ffffff;
+}
+
+.sect1__video-icon {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    background: linear-gradient(to right, darkgray, white);
+    justify-content: center;
+    margin: 0 auto 10px;
+}
+
+.sect1__video-icon img {
+    height: 60px;
+    margin-left: 5px;
+}

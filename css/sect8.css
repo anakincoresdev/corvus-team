@@ -1,0 +1,52 @@
+.sect8 {
+    position: relative;
+    overflow: hidden;
+}
+
+.sect8__info {
+    width: 76%;
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+    background: linear-gradient(to bottom, #E7E7E7, #D4D4D4);
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    box-shadow: 0 10px 10px 6px rgba(0,0,0, .1);
+}
+
+.sect8__phone {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sect8__phone-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.sect8__phone-num {
+    margin-right: 10px;
+    color: #000;
+    font-weight: 100;
+    font-family: "CenturyGothic",sans-serif;
+    opacity: .7;
+}
+
+.sect8__phone-name {
+    opacity: .7;
+}
+
+.sect8__address {
+    font-weight: 100;
+    opacity: .7;
+    font-size: 20px;
+}
+
+.sect8__map {
+    filter: grayscale(80%);
+}

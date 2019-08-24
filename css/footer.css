@@ -1,0 +1,15 @@
+.footer {
+    color: #ffffff;
+    background: linear-gradient(to bottom, #3D3D3D, #797979);
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.footer .society-icon {
+    width: 30px;
+}

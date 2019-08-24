@@ -1,0 +1,30 @@
+.sect5 {
+    background: linear-gradient(to bottom, #3D3D3D, #797979);
+    color: #ffffff;
+}
+
+.sect5__content {
+    display: flex;
+    align-items: center;
+}
+
+.sect5__img {
+    width: 45%;
+    margin-right: 50px;
+}
+
+.sect5__info {
+    margin-right: 50px;
+}
+
+.sect5__link {
+    margin-top: 30px;
+}
+
+.sect5__society {
+    margin-top: 30px;
+}
+
+.sect5__society img{
+    width: 40px;
+}

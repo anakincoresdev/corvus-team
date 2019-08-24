@@ -1,0 +1,91 @@
+.sect7 {
+    padding: 40px 0;
+    background: linear-gradient(to bottom, #3D3D3D, #797979);
+}
+
+.sect7__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect7__cards {
+    display: flex;
+    align-items: center;
+}
+
+.sect7__card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #FEFEFE, #E3E3E3);
+    border-radius: 6px;
+    min-height: 380px;
+    width: 270px;
+}
+
+.sect7__card--center {
+    background: linear-gradient(to right, #D3D3D3, #A5A5A5);
+    color: #ffffff;
+}
+
+.sect7__card:not(:last-child) {
+    margin-right: 40px;
+}
+
+.sect7__card-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect7__card-icon {
+    margin-bottom: 10px;
+}
+
+.sect7__card-icon img{
+    width: 80px;
+}
+
+.sect7__card-title {
+    margin-bottom: 20px;
+}
+
+.sect7__card-text {
+    margin: 0 0 10px;
+}
+
+.sect7__price-item {
+    font-weight: 900;
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.sect7__price-period {
+    font-weight: 100;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.sect7__card-bottom {
+    text-align: center;
+}
+
+.sect7__card-button {
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 5px 50px;
+    border: 1px solid #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sect7__card--center .sect7__card-button {
+    background: #000;
+    color: #ffffff;
+}
