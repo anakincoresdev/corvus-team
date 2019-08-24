@@ -49,3 +49,46 @@
     width: 160px;
     margin: 0 10px;
 }
+
+@media screen and (max-width: 1024px) {
+    .sect2__benefit {
+        font-size: 14px;
+        width: 340px;
+    }
+    .sect2__logo {
+        width: 80px;
+    }
+    .sect2__benefit-icon {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sect2__benefits {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sect2__logo {
+        display: none;
+    }
+    .sect2__benefit {
+        margin-bottom: 20px;
+    }
+    .sect2 {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sect2__benefit {
+        font-size: 12px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .sect2__benefit-title {
+        margin-bottom: 5px;
+    }
+    .sect2__benefit-icon {
+        width: 40px;
+    }
+}

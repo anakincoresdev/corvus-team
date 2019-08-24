@@ -45,3 +45,27 @@
 .sect4__link {
     margin-top: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+    .sect4__slider {
+        width: 80%;
+    }
+    .sect4__text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .sect4__arrow {
+        width: 20px;
+    }
+    .sect4__arrow--prev {
+        left: -25px;
+    }
+    .sect4__arrow--next {
+        right: -25px;
+    }
+    .sect4__text {
+        font-size: 12px;
+    }
+}

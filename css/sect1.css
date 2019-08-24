@@ -26,7 +26,7 @@
 }
 
 .sect1__info {
-    margin-top: 160px;
+    margin-top: 260px;
 }
 
 .sect1__info-container {
@@ -44,6 +44,7 @@
 .sect1__button {
     text-transform: uppercase;
     padding: 8px 20px;
+    margin-top: 20px;
 }
 
 .sect1__video {
@@ -73,4 +74,94 @@
 .sect1__video-icon img {
     height: 60px;
     margin-left: 5px;
+}
+
+@media screen and (max-width: 1370px) {
+    .sect1__info {
+        margin-top: 160px;
+    }
+    .sect1__header-link {
+        margin-right: 10px;
+    }
+    .sect1__header-link, .sect1__header-phone {
+        font-size: 16px;
+    }
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sect1__header {
+        padding-top: 20px;
+    }
+    .sect1__header-phone {
+        font-size: 20px;
+    }
+    .sect1__header-link {
+        display: none;
+    }
+    .sect1__info {
+        margin-top: 100px;
+    }
+    .sect1__info-container {
+        width: 400px;
+    }
+    .sect1__society {
+        margin-top: 40px;
+    }
+    .sect1__video {
+        height: 100px;
+    }
+    .sect1__video-icon img {
+        height: 30px;
+    }
+    .sect1__video-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .sect1__title {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .sect1 {
+        background-position: 60% 50%;
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sect1__subtitle {
+        width: 250px;
+    }
+    .sect1 .society-icon {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sect1__info-container {
+        width: 100%;
+    }
+    .sect1__button {
+        width: 100%;
+        font-size: 14px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .sect1__title {
+        font-size: 18px;
+    }
+    .sect1__subtitle {
+        font-size: 14px;
+    }
+    .sect1__society {
+        margin-top: 20px;
+    }
+    .sect1 {
+        background-position: 50% 50%;
+    }
 }
