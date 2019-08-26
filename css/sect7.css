@@ -89,3 +89,13 @@
     background: #000;
     color: #ffffff;
 }
+
+@media screen and (max-width: 970px) {
+    .sect7__cards {
+        flex-direction: column;
+    }
+    .sect7__card:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

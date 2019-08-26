@@ -13,3 +13,18 @@
 .footer .society-icon {
     width: 30px;
 }
+
+@media screen and (max-width: 740px) {
+    .footer__content {
+        padding: 0 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .footer__content {
+        flex-direction: column;
+        padding: 25px 20px;
+        height: 150px;
+    }
+}

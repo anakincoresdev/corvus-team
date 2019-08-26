@@ -50,3 +50,22 @@
 .sect8__map {
     filter: grayscale(80%);
 }
+
+@media screen and (max-width: 1024px) {
+    .sect8__map {
+        height: 530px;
+    }
+    .sect8__info {
+        width: 94%;
+        left: 3%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sect8__phone, .sect8__address {
+        font-size: 14px;
+        text-align: center;
+    }
+    .sect8__phone-icon {
+        width: 20px;
+    }
+}

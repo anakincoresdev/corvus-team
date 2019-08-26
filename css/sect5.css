@@ -28,3 +28,29 @@
 .sect5__society img{
     width: 40px;
 }
+.sect5__headline {
+    text-align: left;
+    padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .sect5__content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: right;
+    }
+    .sect5__info {
+        padding: 20px;
+        align-self: flex-end;
+        margin-right: 0;
+    }
+    .sect5__headline {
+        text-align: right;
+    }
+    .sect5__img {
+        width: 80%;
+    }
+    .sect5__text {
+        font-size: 12px;
+    }
+}
