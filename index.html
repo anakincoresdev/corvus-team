@@ -6,6 +6,7 @@
     <title>Современная акробатика | Corvus team</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sect1.css">
@@ -118,7 +119,7 @@
                         <p class="sect3__info sect3__info--top">Спортивное движение, представляющее собой сочетание
                             движений из боевых искусств, гимнастики, капоэйры, брейкданса и других спортивных дисциплин
                             для создания смеси из вращений в разных плоскостях</p>
-                        <a href="" class="sect3__link more-link more-link--light">Читать дальше</a>
+                        <a href="" id="tricking_button" class="sect3__link more-link more-link--light">Читать дальше</a>
                     </div>
                 </div>
                 <div class="sect3__bottom">
@@ -260,8 +261,30 @@
         </div>
     </footer>
 
+    <!--Модальные окна-->
+    <div id="tricking" class="tricking-modal white-popup mfp-hide">
+        <div class="tricking-modal__content">
+            <div class="tricking-modal__main">
+                <h2 class="tricking-modal__title title">Трикинг</h2>
+                <p class="tricking-modal__text text">Трикинг (англ. tricking, martialartstricking) - спортивное движение,
+                    которое включает в себя движения различных видов спорта, таких как гимнастика, акробатика, боевые искусства,
+                    а так же других зрелищных дисциплин с целью выполнения эффектных, высококоординационных комбинаций и
+                    связок.
+                    <br><br>
+                    Слово "трикинг" -  общепринятое сокращение от полного названия дисциплины - martial arts tricking,
+                    в переводе на русский обозначающего "трюки боевых искусств".
+                </p>
+                <a href="" class="modal-link text">Смотреть видео</a>
+            </div>
+            <img src="" alt="">
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/magnific-popup/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
             // Optional parameters
