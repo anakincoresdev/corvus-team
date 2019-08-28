@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Современная акробатика | Corvus team</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FAVICON END -->
+    <!-- SOCIAL -->
+    <meta property="og:image:height" content="333">
+    <meta property="og:image:width" content="635">
+    <meta property="og:url" content="http://corvusteam.ru/">
+    <meta property="og:image" content="http://corvusteam.ru/assets/img/favicon/og-image.jpg">
+    <meta property="og:description" content="Детей и молодежь (от 8 до 21 года) приглашаю на тренировки по трикингу и акробатике!">
+    <meta property="og:title" content="Тренировки по акробатике и трикингу в крутом зале и в удобное время">
+    <!-- SOCIAL END -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <link rel="stylesheet" href="lib/magnific-popup/magnific-popup.css">
@@ -128,7 +150,7 @@
                         <h3 class="sect3__headline headline headline--light">Танцевальная акробатика</h3>
                         <p class="sect3__info sect3__info--bottom">Элементы акробатики, которые используются современными
                             направлениями танцев от Hip-hop до Contemporary. Современные танцы должны удивлять!</p>
-                        <a href="" class="sect3__link more-link more-link--light">Читать дальше</a>
+                        <a href="" id="acrobatics_button" class="sect3__link more-link more-link--light">Читать дальше</a>
                     </div>
                     <img src="img/sect3_img2.png" alt="" class="sect3__img sect3__img--bottom">
                 </div>
@@ -158,7 +180,7 @@
             </div>
             <p class="sect4__text text">Это инновационный спортивный проект, предназначенный для развития современных
                 экстремальных видов спорта и проведения спортивных мероприятий на международном уровне</p>
-            <a href="" class="sect4__link more-link">Читать дальше</a>
+            <a href="" id="gym_button" class="sect4__link more-link">Читать дальше</a>
         </div>
     </section>
     <section class="sect5">
@@ -170,7 +192,7 @@
                 <p class="sect5__text text">Стаж работы тренером 15 лет. Основатель команды Corvus Team.
                     Высшее образование в направлении Физическая Культура и Спорт. Организатор региональных
                     и городских соревнований по трикингу, постановщик экстремальных шоу.</p>
-                <a href="" class="sect5__link more-link more-link--light">Читать дальше</a>
+                <a href="" id="trainer_button" class="sect5__link more-link more-link--light">Читать дальше</a>
                 <div class="sect5__society society">
                     <a href="" class="society-link"><img src="img/vk-light.png" alt="" class="society-icon"></a>
                     <a href="" class="society-link"><img src="img/instagram-light.png" alt="" class="society-icon"></a>
@@ -194,7 +216,7 @@
                     <div class="sect7__card-bottom">
                         <div class="sect7__price"><span class="sect7__price-item">450 Р<span class="sect7__price-period">/ занятие</span></span>
                         </div>
-                        <button class="sect7__card-button button button--light">Начать</button>
+                        <button class="begin1_button sect7__card-button button button--light">Начать</button>
                     </div>
                 </div>
                 <div class="sect7__card sect7__card--center">
@@ -209,7 +231,7 @@
                     <div class="sect7__card-bottom">
                         <div class="sect7__price"><span class="sect7__price-item">3600 р<span class="sect7__price-period">/ мес</span></span>
                         </div>
-                        <button class="sect7__card-button button--light">Начать</button>
+                        <button class="begin2_button sect7__card-button button--light">Начать</button>
                     </div>
                 </div>
                 <div class="sect7__card">
@@ -224,7 +246,7 @@
                     <div class="sect7__card-bottom">
                         <div class="sect7__price"><span class="sect7__price-item">700 р<span class="sect7__price-period">/ занятие</span></span>
                         </div>
-                        <button class="sect7__card-button button--light">Начать</button>
+                        <button class="begin3_button sect7__card-button button--light">Начать</button>
                     </div>
                 </div>
             </div>
@@ -276,7 +298,94 @@
                 </p>
                 <a href="" class="modal-link text">Смотреть видео</a>
             </div>
-            <img src="" alt="">
+            <img src="img/tricking-modal-img.png" class="tricking-modal__img" alt="">
+        </div>
+    </div>
+
+    <div id="acrobatics" class="tricking-modal white-popup mfp-hide">
+        <div class="tricking-modal__content">
+            <div class="tricking-modal__main">
+                <h2 class="tricking-modal__title title">Танцевальная акробатика</h2>
+                <p class="tricking-modal__text text">Танцевальная акробатика - раздел современной акробатики,
+                    который состоит из смеси акробатических направлений (классическая акробатика, капоэйра, трикинг и т.д)
+                    целью которого является постановка эффектной танцевальной хореографии.
+                    <br><br>
+                    Под танцевальной акробатикой понимают выполнение акробатических элементов сольно или с партнёром
+                    на твёрдых поверхностях, чаще всего без использования спортивного инвентаря.
+                </p>
+                <a href="" class="modal-link text">Смотреть видео</a>
+            </div>
+            <img src="img/acrobatics-img.png" class="tricking-modal__img" alt="">
+        </div>
+    </div>
+
+    <div id="gym" class="tricking-modal white-popup mfp-hide">
+        <div class="tricking-modal__content">
+            <div class="tricking-modal__main">
+                <h2 class="tricking-modal__title title">Трикинг</h2>
+                <p class="tricking-modal__text text">Трикинг (англ. tricking, martialartstricking) - спортивное движение,
+                    которое включает в себя движения различных видов спорта, таких как гимнастика, акробатика, боевые искусства,
+                    а так же других зрелищных дисциплин с целью выполнения эффектных, высококоординационных комбинаций и
+                    связок.
+                    <br><br>
+                    Слово "трикинг" -  общепринятое сокращение от полного названия дисциплины - martial arts tricking,
+                    в переводе на русский обозначающего "трюки боевых искусств".
+                </p>
+            </div>
+            <img src="img/gym-img.png" class="tricking-modal__img" alt="">
+        </div>
+    </div>
+
+    <div id="trainer" class="tricking-modal white-popup mfp-hide">
+        <div class="tricking-modal__content">
+            <div class="tricking-modal__main">
+                <h2 class="tricking-modal__title title">Тренер</h2>
+                <p class="tricking-modal__text text">Зайцев Артём Сергеевич - участвовал в создании центра
+                    Экстремальных видов спорта "Спортэкс". Один из первых преподавателей направления Трикинг
+                    в Красноярске. Один из первых выполнил на отлично научную работу в направлении Трикинг.
+                    <br><br>
+                    "В процессе обучения считаю важным анализировать опыт атлетов по всему миру. Поскольку
+                    качественная техническая и физическая подготовка являются основой профессионального спортсмена.
+                    <br>Считаю что ученики должны быть целеустремлёнными, развиваться как в спорте, так и в учёбе,
+                    развивать свой интеллект, совершенствоваться во всех направлениях человеческой деятельности".
+                </p>
+            </div>
+            <img src="img/trainer-img.png" class="tricking-modal__img" alt="">
+        </div>
+    </div>
+
+    <div  id="begin1" class="begin tricking-modal white-popup mfp-hide">
+        <div class="tricking-modal__content">
+            <form class="begin_form" action="">
+                <h2 class="tricking-modal__title title title--dark">Разовое занятие</h2>
+                <input type="text" class="begin__input" name="name" placeholder="Ваше имя">
+                <input type="text" class="begin__input" name="phone" placeholder="Телефон">
+                <input type="hidden" name="type" value="Разовое занятие">
+                <button type="submit" class="begin-form-button sect7__card-button button--light">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <div  id="begin2" class="begin tricking-modal white-popup mfp-hide">
+        <div class="tricking-modal__content">
+            <form class="begin_form" action="">
+                <h2 class="tricking-modal__title title title--dark">Стандартное занятие</h2>
+                <input type="text" class="begin__input" name="name" placeholder="Ваше имя">
+                <input type="text" class="begin__input" name="phone" placeholder="Телефон">
+                <input type="hidden" name="type" value="Стандартное занятие">
+                <button type="submit" class="begin-form-button sect7__card-button button--light">Записаться</button>
+            </form>
+        </div>
+    </div>
+    <div  id="begin3" class="begin tricking-modal white-popup mfp-hide">
+        <div class="tricking-modal__content">
+            <form class="begin_form" action="">
+                <h2 class="tricking-modal__title title title--dark">Индивидуальное занятие</h2>
+                <input type="text" class="begin__input" name="name" placeholder="Ваше имя">
+                <input type="text" class="begin__input" name="phone" placeholder="Телефон">
+                <input type="hidden" name="type" value="Индивидуальное занятие">
+                <button type="submit" class="begin-form-button sect7__card-button button--light">Записаться</button>
+            </form>
         </div>
     </div>
 
