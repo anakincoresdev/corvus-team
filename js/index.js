@@ -1,3 +1,10 @@
+$('a[href^="#"]').click(function () {
+    var elementClick = $(this).attr('href');
+    var destination = $(elementClick).offset().top;
+    $('body').animate({scrollTop: destination}, 1000);
+    $('html').animate({scrollTop: destination}, 1000);
+});
+
 $('#free_button').magnificPopup({
     items: {
         src: '#free_training',
