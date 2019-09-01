@@ -1,3 +1,11 @@
+$('#free_button').magnificPopup({
+    items: {
+        src: '#free_training',
+        type: 'inline'
+    },
+    closeBtnInside: false
+});
+
 $('#tricking_button').magnificPopup({
     items: {
         src: '#tricking',

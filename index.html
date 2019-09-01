@@ -57,19 +57,19 @@
                     <div class="sect1__info-container">
                         <h1 class="sect1__title">Тренировки по акробатике и трикингу в крутом зале и в удобное время</h1>
                         <h4 class="sect1__subtitle">Детей и молодёжь (от 6 до 21 года) приглашаем на тренировки по трикингу и акробатике!</h4>
-                        <button class="sect1__button">Записаться на бесплатное занятие</button>
+                        <button id="free_button" class="sect1__button">Записаться на бесплатное занятие</button>
                     </div>
                 </div>
                 <div class="sect1__society society container">
-                    <a href="" class="society-link"><img src="img/vk-dark.png" alt="" class="society-icon"></a>
-                    <a href="" class="society-link"><img src="img/instagram-dark.png" alt="" class="society-icon"></a>
-                    <a href="" class="society-link"><img src="img/telegram-dark.png" alt="" class="society-icon"></a>
+                    <a href="https://vk.com/corvusteam" target="_blank" class="society-link"><img src="img/vk-dark.png" alt="" class="society-icon"></a>
+                    <a href="https://www.instagram.com/corvusteam/" target="_blank" class="society-link"><img src="img/instagram-dark.png" alt="" class="society-icon"></a>
+                    <a href="tg://resolve?domain=corvusteam" target="_blank" class="society-link"><img src="img/telegram-dark.png" alt="" class="society-icon"></a>
                 </div>
                 <div class="sect1__video">
-                    <div class="sect1__video-play">
+                    <a href="https://www.youtube.com/watch?v=IuY97GZLugA&feature=youtu.be" target="_blank" class="sect1__video-play">
                         <div class="sect1__video-icon"><img src="img/play-triangle.png" alt=""></div>
                         <span class="sect1__video-text">Смотреть видео</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -194,9 +194,9 @@
                     и городских соревнований по трикингу, постановщик экстремальных шоу.</p>
                 <a href="" id="trainer_button" class="sect5__link more-link more-link--light">Читать дальше</a>
                 <div class="sect5__society society">
-                    <a href="" class="society-link"><img src="img/vk-light.png" alt="" class="society-icon"></a>
-                    <a href="" class="society-link"><img src="img/instagram-light.png" alt="" class="society-icon"></a>
-                    <a href="" class="society-link"><img src="img/telegram-light.png" alt="" class="society-icon"></a>
+                    <a href="https://vk.com/corvusteam" target="_blank" class="society-link"><img src="img/vk-light.png" alt="" class="society-icon"></a>
+                    <a href="https://www.instagram.com/corvusteam/" target="_blank" class="society-link"><img src="img/instagram-light.png" alt="" class="society-icon"></a>
+                    <a href="tg://resolve?domain=corvusteam" target="_blank" class="society-link"><img src="img/telegram-light.png" alt="" class="society-icon"></a>
                 </div>
             </div>
         </div>
@@ -214,7 +214,7 @@
                         <p class="sect7__card-text text">Гибкий график</p>
                     </div>
                     <div class="sect7__card-bottom">
-                        <div class="sect7__price"><span class="sect7__price-item">450 Р<span class="sect7__price-period">/ занятие</span></span>
+                        <div class="sect7__price"><span class="sect7__price-item">450 р<span class="sect7__price-period">/ занятие</span></span>
                         </div>
                         <button class="begin1_button sect7__card-button button button--light">Начать</button>
                     </div>
@@ -276,14 +276,26 @@
             <span class="footer__author">Разработано Corvus Team</span>
             <span class="footer__policy">2018 © Все права защищены</span>
             <div class="footer__society society">
-                <a href="" class="society-link"><img src="img/vk-light.png" alt="" class="society-icon"></a>
-                <a href="" class="society-link"><img src="img/instagram-light.png" alt="" class="society-icon"></a>
-                <a href="" class="society-link"><img src="img/telegram-light.png" alt="" class="society-icon"></a>
+                <a href="https://vk.com/corvusteam" target="_blank" class="society-link"><img src="img/vk-light.png" alt="" class="society-icon"></a>
+                <a href="https://www.instagram.com/corvusteam/" target="_blank" class="society-link"><img src="img/instagram-light.png" alt="" class="society-icon"></a>
+                <a href="tg://resolve?domain=corvusteam" target="_blank" class="society-link"><img src="img/telegram-light.png" alt="" class="society-icon"></a>
             </div>
         </div>
     </footer>
 
     <!--Модальные окна-->
+    <div  id="free_training" class="begin tricking-modal white-popup mfp-hide">
+        <div class="tricking-modal__content">
+            <form class="begin_form" action="">
+                <h2 class="tricking-modal__title title title--dark">Бесплатное занятие</h2>
+                <input type="text" class="begin__input" name="name" placeholder="Ваше имя">
+                <input type="text" class="begin__input" name="phone" placeholder="Телефон">
+                <input type="hidden" name="type" value="Бесплатное пробное занятие">
+                <button type="submit" class="begin-form-button sect7__card-button button--light">Записаться</button>
+            </form>
+        </div>
+    </div>
+
     <div id="tricking" class="tricking-modal white-popup mfp-hide">
         <div class="tricking-modal__content">
             <div class="tricking-modal__main">
@@ -322,15 +334,16 @@
     <div id="gym" class="tricking-modal white-popup mfp-hide">
         <div class="tricking-modal__content">
             <div class="tricking-modal__main">
-                <h2 class="tricking-modal__title title">Трикинг</h2>
-                <p class="tricking-modal__text text">Трикинг (англ. tricking, martialartstricking) - спортивное движение,
-                    которое включает в себя движения различных видов спорта, таких как гимнастика, акробатика, боевые искусства,
-                    а так же других зрелищных дисциплин с целью выполнения эффектных, высококоординационных комбинаций и
-                    связок.
-                    <br><br>
-                    Слово "трикинг" -  общепринятое сокращение от полного названия дисциплины - martial arts tricking,
-                    в переводе на русский обозначающего "трюки боевых искусств".
+                <h2 class="tricking-modal__title title">Спортзал</h2>
+                <p class="tricking-modal__text text">
+                    "Спортэкс" является единственным подобным сооружением в России и крупнейшим в Европе. Это инновационный
+                    спортивный проект, предназначенный для развития современных экстремальных видов спорта и проведения
+                    спортивных мероприятий на международном уровне.
                 </p>
+                <ul class="gym__list">
+                    <li class="gym__li tricking-modal__text">4032 квадратных метра - площадь скейт-парка</li>
+                    <li class="gym__li tricking-modal__text">3 спортивных зала: скейт-парк, тренажерный и гимнастический залы</li>
+                </ul>
             </div>
             <img src="img/gym-img.png" class="tricking-modal__img" alt="">
         </div>

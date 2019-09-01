@@ -45,6 +45,7 @@
     text-transform: uppercase;
     padding: 8px 20px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .sect1__video {
@@ -73,7 +74,7 @@
 
 .sect1__video-icon img {
     height: 60px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 1370px) {
@@ -116,6 +117,7 @@
     }
     .sect1__video-icon img {
         height: 30px;
+        margin-left: 5px;
     }
     .sect1__video-icon {
         width: 50px;
@@ -140,6 +142,7 @@
     .sect1 .society-icon {
         width: 30px;
     }
+
 }
 
 @media screen and (max-width: 420px) {

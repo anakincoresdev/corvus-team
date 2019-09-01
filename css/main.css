@@ -242,6 +242,61 @@ input:focus, button:focus {
     font-family: "CenturyGothic", sans-serif;
 }
 
+.gym__list {
+    width: 100%;
+    padding-left: 30px;
+}
+
+.gym__li {
+    list-style: none;
+    position: relative;
+}
+
+.gym__li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+#gym {
+    color: white;
+    background: linear-gradient(to right, #252820, #70776D);
+}
+
+.gym__li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #B3B6A6;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 5px);
+    left: -30px;
+}
+
+.modal-link {
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .tricking-modal__text {
+        font-size: 16px;
+    }
+    .tricking-modal__img {
+        width: 200px;
+    }
+    .tricking-modal__title {
+        margin-bottom: 20px;
+    }
+    .modal-link {
+        margin-top: 20px;
+    }
+    .tricking-modal {
+        padding: 25px;
+    }
+    .tricking-modal__main {
+        margin-right: 10px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .title {
         font-size: 20px;
@@ -263,5 +318,39 @@ input:focus, button:focus {
     }
     .headline {
         font-size: 18px;
+    }
+    .tricking-modal {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .tricking-modal__content {
+        flex-direction: column;
+    }
+    .tricking-modal__main {
+        margin-right: 0;
+    }
+    .tricking-modal__img {
+        margin-top: 30px;
+        width: 60%;
+    }
+    .tricking-modal__text {
+        text-align: center;
+    }
+    .gym__li {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .tricking-modal__text {
+        font-size: 14px;
+    }
+    .tricking-modal {
+        padding: 10px;
+    }
+    .tricking-modal__img {
+        margin-top: 20px;
     }
 }
